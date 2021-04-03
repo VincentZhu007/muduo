@@ -1,1 +1,2 @@
 *.swp
+/cmake-build-debug/

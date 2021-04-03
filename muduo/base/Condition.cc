@@ -8,6 +8,13 @@
 #include <errno.h>
 #include <sys/time.h>
 
+/**
+ * wait增加超时唤醒功能
+ * 唤醒之后线程是已经获取了吗？
+ * 时间变量翻转如何处理？ gettimeofday?
+ * @param seconds
+ * @return
+ */
 // returns true if time out, false otherwise.
 bool muduo::Condition::waitForSeconds(int seconds)
 {
